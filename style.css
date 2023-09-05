@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Fix for flickering carousel */                                                     
+.carousel-inner .carousel-item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .carousel-inner .carousel-item:first-of-type {
+    position: relative;
+  }
+  .carousel-inner .active {
+    opacity: 1;
+  }
+/**/
+
+.carousel-inner {
+    background: linear-gradient(
+        50deg,
+        hsla(73, 56%, 56%, 0.7),
+        hsla(197, 63%, 61%, 0.7) 100%
+      );
+}
+
+.carousel-indicators {
+    gap: 24px;
+    margin-bottom: 34px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 100%;
+}
+
 .row {
     height: 100vh;
+}
+
+.card {
+    border: 0;
+    border-radius: 0;
+    height: 70vh;
 }
