@@ -1,52 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap');
 
-* {
-    font-family: 'Raleway', sans-serif;
+/* Inicio Header */
+
+#header-section {
+    background-color: #521851;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23521851' cx='50' cy='0' r='50'/%3E%3Cg fill='%23561957' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23591a5e' cx='50' cy='100' r='50'/%3E%3Cg fill='%235d1c65' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23601e6c' cx='50' cy='200' r='50'/%3E%3Cg fill='%23621f73' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2365227a' cx='50' cy='300' r='50'/%3E%3Cg fill='%23672482' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23692689' cx='50' cy='400' r='50'/%3E%3Cg fill='%236b2991' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%236c2c99' cx='50' cy='500' r='50'/%3E%3Cg fill='%236d2fa2' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%236d32aa' cx='50' cy='600' r='50'/%3E%3Cg fill='%236d35b3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%236c39bb' cx='50' cy='700' r='50'/%3E%3Cg fill='%236b3dc4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%236840cd' cx='50' cy='800' r='50'/%3E%3Cg fill='%236544d7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%236148e0' cx='50' cy='900' r='50'/%3E%3Cg fill='%235c4de9' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%235551F3' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100dvh;
+
+    display: flex;
 }
 
-/* Fix for flickering carousel */                                                     
-.carousel-inner .carousel-item {
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-    position: absolute;
-  }
-  .carousel-inner .carousel-item:first-of-type {
-    position: relative;
-  }
-  .carousel-inner .active {
-    opacity: 1;
-  }
-/**/
-
-.carousel-inner {
-    background: linear-gradient(
-        50deg,
-        hsla(73, 56%, 56%, 0.7),
-        hsla(197, 63%, 61%, 0.7) 100%
-      );
+#header-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel-indicators {
-    gap: 24px;
-    margin-bottom: 34px;
+.main-title {
+    color: white;
+    font-size: 8rem;
 }
 
-.carousel-indicators [data-bs-target] {
-    width: 20px;
-    height: 20px;
-    border: 0;
-    border-radius: 100%;
+.main-subtitle {
+    color: white;
+    font-size: 2rem;
 }
 
-.row {
-    height: 100vh;
+/* Inicio Sobre mi */
+
+#about-me-section {
+    min-height: 700px;
+
+    display: flex;
+}
+
+#about-me-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-section .col-md-6 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-section h1 {
+    margin: 32px 0;
+}
+
+.code-img {
+    max-width: 360px;
+}
+
+/* Inicio Conocimientos */
+
+#knowledge-section {
+    min-height: 100dvh;
+
+    display: flex;
+}
+
+#knowledge-section .container {
+    min-height: 100dvh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+#knowledge-section .col-md-6 {
+    padding: 12px;
+}
+
+#knowledge-section .col-md-4 {
+    padding: 12px;
+}
+
+#knowledge-section h2 {
+    margin: 32px 0;
 }
 
 .card {
     border: 0;
-    border-radius: 0;
-    height: 70vh;
+}
+
+.card-header {
+    background-color: #dc3545;
+}
+
+.card-title {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-icon {
+    max-width: 64px;
+    max-height: 64px;
+    filter: invert(100%) sepia(69%) saturate(2%) hue-rotate(4deg) brightness(107%) contrast(101%);
+}
+
+/* Inicio footer */
+
+#footer-section {
+    min-height: 100px;
+    margin-top: 12px;
+    background-color: black;
+    display: flex;
+}
+
+#footer-section .container {
+    display: flex;
+}
+
+#footer-section .row {
+    flex: 1;
+}
+
+.email {
+    gap: 2px;
+    font-size: 0.72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    gap: 4px;
+    font-size: 0.81rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-footer {
+    color: white;
+    margin: 0;
+}
+
+/* Media querys */
+@media (width <= 992px) {
+    .card-icon {
+        max-width: 48px;
+        max-height: 48px;
+    }
+}
+
+@media (width <= 768px) {
+    .code-img {
+        max-width: 200px;
+    }
+}
+
+@media (width <= 576px) {
+    .main-title {
+        font-size: 4rem;
+    }
+    .main-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (width <= 300px) {
+    .code-img {
+        max-width: 128px;
+    }
+    .card-title {
+        font-size: 0.9rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    .card-icon {
+        max-width: 32px;
+        max-height: 32px;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .main-subtitle {
+        font-size: 0.8rem;
+    }
 }

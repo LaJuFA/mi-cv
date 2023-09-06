@@ -1,76 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Curriculum</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="carouselCards" class="carousel slide carousel-fade">
-    <!-- Indicadores -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselCards" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <div id="body-section">
+        <!-- Seccion header -->
+        <div id="header-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1 class="main-title">Lautaro Acuña</h1>
+                        <h4 class="main-subtitle">Estudiante de informática</h4>
+                        <img class="card-icon" src="./images/code-solid.svg" alt="code-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion sobre mí -->
+        <div id="about-me-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="code-img" src="./images/it-department.png" alt="coding-img">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h1 class="card-title text-primary border-bottom border-primary">¡Bienvenido a mi pagina!</h1>
+                        <p class="card-text">
+                            Hola me llamo Lautaro y actualmente soy 
+                            estudiante de segundo año en la carrera de 
+                            “Licenciatura en Informática” en la Universidad 
+                            nacional de La Plata.
+                        </p>
+                        <p class="card-text">
+                            Soy apasionado a la informática, decidí seguir la 
+                            carrera de informática cuando tuve mi primer 
+                            acercamiento a la programación en mi primer año 
+                            de secundaria haciendo paginas web y juegos 
+                            por simple curiosidad.
+                        </p>
+                        <p class="card-text">
+                            Actualmente estoy en busca de mi primer trabajo, 
+                            si bien entiendo que tengo un largo camino por 
+                            delante creo que ya es hora de que ponga en 
+                            practica todo el conocimiento que adquiri y que 
+                            planeo seguir adquiriendo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion conocimientos -->
+        <div id="knowledge-section">
+            <div class="container align-content-center">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="card-title text-danger">Conocimientos</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-header">
+                                <img class="card-icon" src="./images/html5.svg" alt="html-icon">
+                                <img class="card-icon" src="./images/square-js.svg" alt="js-icon">
+                                <img class="card-icon" src="./images/css3-alt.svg" alt="css-icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollo Front End</h5>
+                                <p class="card-text">
+                                    Empecé a estudiar desarrollo 
+                                    web en 2022 por un curso 
+                                    dictado por “Potrero Digital”, más
+                                    tarde completé la sección de 
+                                    fundamentos de “The Odin 
+                                    Project”, gracias a esto aprendí
+                                    los conceptos básicos sobre 
+                                    HTML, CSS y JavaScript.
+                                </p>
+                                <a class="card-text" href="./documents/dompdf_out.pdf" target="_blank">Certificado Front End</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-header">
+                                <img class="card-icon" src="./images/python.svg" alt="python-icon">
+                                <img class="card-icon" src="./images/java.svg" alt="java-icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Orientación a objetos</h5>
+                                <p class="card-text">
+                                    Las materias que curse hasta 
+                                    ahora me dieron una base solida 
+                                    sobre los conceptos de la 
+                                    programación orientada a 
+                                    objetos en Java. Para Python
+                                    además de poder aplicar el 
+                                    paradigma de objetos aprendí a 
+                                    usar varias de sus librerías más
+                                    conocidas (Numpy, Pillow, Tkinter).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-header">
+                                <img class="card-icon" src="./images/gitlab.svg" alt="gitlab-icon">
+                                <img class="card-icon" src="./images/git-alt.svg" alt="git-icon">
+                                <img class="card-icon" src="./images/github.svg" alt="github-icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Control de versiones</h5>
+                                <p class="card-text">
+                                    En los cursos mencionados
+                                    me enseñaron a utilizar GIT, al 
+                                    requerir el uso de esta
+                                    herramienta en sus tareas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-header">
+                                <img class="card-icon" src="./images/ubuntu.svg" alt="ubuntu-icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Linux</h5>
+                                <p class="card-text">
+                                    He utilizado las distros Ubuntu y Linux Mint. Todavía sigo aprendiendo, pero 
+                                    conozco los comandos básicos del intérprete de comandos bash.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-header">
+                                <img class="card-icon" src="./images/language-solid.svg" alt="language-icon">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Idiomas</h5>
+                                <p class="card-text">
+                                    Actualmente cursando el nivel 
+                                    2 de inglés en el instituto “New 
+                                    Oxford” en La Plata.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion contacto footer -->
+        <div id="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="email col-sm-6">
+                        <img class="card-icon" src="./images/square-envelope-solid.svg" alt="email-icon">
+                        <p class="text-footer">lauljfa05@gmail.com</p>
+                    </div>
+                    <div class="phone col-sm-6">
+                        <img class="card-icon" src="./images/square-phone-solid.svg" alt="phone-icon">
+                        <p class="text-footer">+54 221 621-8741</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-inner">
-      <!-- Seccion sobre mi -->
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row justify-content-center align-content-center">
-            <div class="card shadow text-center">
-              <div class="card-body">
-                <h4 class="card-title">Lorem</h4>
-                <p class="card-text">Ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Seccion de mis conocimientos -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row justify-content-center align-content-center">
-            <div class="card shadow text-center">
-              <div class="card-body">
-                <h4 class="card-title">Lorem</h4>
-                <p class="card-text">Ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Seccion proyectos -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row justify-content-center align-content-center">
-            <div class="card shadow text-center">
-              <div class="card-body">
-                <h4 class="card-title">Lorem</h4>
-                <p class="card-text">Ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Seccion contacto -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row justify-content-center align-content-center">
-            <div class="card shadow text-center">
-              <div class="card-body">
-                <h4 class="card-title">Lorem</h4>
-                <p class="card-text">Ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
